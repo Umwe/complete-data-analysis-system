@@ -26,3 +26,12 @@ class FileUploadView(APIView):
         analysis = Analysis.objects.create(file=file_obj, result={'analysis': result, 'chatgpt_response': chatgpt_response})
         serializer = AnalysisSerializer(analysis)
         return Response(serializer.data)
+
+def get_chatgpt_analysis(data):
+    response = openai.Completion.create(
+        model="text-davinci-003",
+        prompt=f"Explain the following data analysis: {data}",
+        max_tokens=150
+    )
+    return response.choices[0].text
+
