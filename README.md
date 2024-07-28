@@ -29,19 +29,19 @@ Data Analysis App is a web application that allows users to upload data files, p
 
 Create a virtual environment and activate it:
 
-bash
-Copy code
+  
+ 
 python -m venv venv
 source venv/bin/activate
 Install the required Python packages:
 
-bash
-Copy code
+  
+ 
 pip install -r requirements.txt
 Configure your PostgreSQL database settings in data_analysis_app/settings.py:
 
 python
-Copy code
+ 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -55,42 +55,42 @@ DATABASES = {
 Configure your AWS S3 settings in data_analysis_app/settings.py:
 
 python
-Copy code
+ 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 AWS_ACCESS_KEY_ID = 'your_access_key'
 AWS_SECRET_ACCESS_KEY = 'your_secret_key'
 AWS_STORAGE_BUCKET_NAME = 'your_bucket_name'
 Run database migrations:
 
-bash
-Copy code
+  
+ 
 python manage.py migrate
 Create a superuser for the admin panel:
 
-bash
-Copy code
+  
+ 
 python manage.py createsuperuser
 Start the Django development server:
 
-bash
-Copy code
+  
+ 
 python manage.py runserver
 Frontend Setup:
 
 Navigate to the frontend directory:
 
-bash
-Copy code
+  
+ 
 cd frontend
 Install the required Node.js packages:
 
-bash
-Copy code
+  
+ 
 npm install
 Start the React development server:
 
-bash
-Copy code
+  
+ 
 npm start
 Usage
 Navigate to http://localhost:3000 in your web browser to access the application.
@@ -158,27 +158,27 @@ OpenAI API key
 Installation
 Clone the repository:
 
-bash
-Copy code
+  
+ 
 git clone https://github.com/yourusername/data-analysis-app.git
 cd data-analysis-app
 Backend Setup:
 
 Create a virtual environment and activate it:
 
-bash
-Copy code
+  
+ 
 python -m venv venv
 source venv/bin/activate
 Install the required Python packages:
 
-bash
-Copy code
+  
+ 
 pip install -r requirements.txt
 Configure your PostgreSQL database settings in data_analysis_app/settings.py:
 
 python
-Copy code
+ 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -192,42 +192,42 @@ DATABASES = {
 Configure your AWS S3 settings in data_analysis_app/settings.py:
 
 python
-Copy code
+ 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 AWS_ACCESS_KEY_ID = 'your_access_key'
 AWS_SECRET_ACCESS_KEY = 'your_secret_key'
 AWS_STORAGE_BUCKET_NAME = 'your_bucket_name'
 Run database migrations:
 
-bash
-Copy code
+  
+ 
 python manage.py migrate
 Create a superuser for the admin panel:
 
-bash
-Copy code
+  
+ 
 python manage.py createsuperuser
 Start the Django development server:
 
-bash
-Copy code
+  
+ 
 python manage.py runserver
 Frontend Setup:
 
 Navigate to the frontend directory:
 
-bash
-Copy code
+  
+ 
 cd frontend
 Install the required Node.js packages:
 
-bash
-Copy code
+  
+ 
 npm install
 Start the React development server:
 
-bash
-Copy code
+  
+ 
 npm start
 Usage
 Navigate to http://localhost:3000 in your web browser to access the application.
