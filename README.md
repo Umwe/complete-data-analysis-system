@@ -27,7 +27,7 @@ Data Analysis App is a web application that allows users to upload data files, p
 - cd data-analysis-app
 - Backend Setup:
 
-Create a virtual environment and activate it:
+# Create a virtual environment and activate it:
 
   
  
@@ -40,8 +40,7 @@ Install the required Python packages:
 pip install -r requirements.txt
 Configure your PostgreSQL database settings in data_analysis_app/settings.py:
 
-python
- 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
